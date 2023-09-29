@@ -1,10 +1,13 @@
 .boton{
-    font-size: 38px;
+    font-size: 2,3em;
     background: #ffffff;
     width: 322px;
-    height: 58px;
+    height: 3,6em;
     flex-shrink: 0;
     margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .menu{
@@ -17,14 +20,15 @@
     display: flex;
 }
 .contenedortexto{
-    display: block;
+    display: flex;
 }
 .center{
     text-align: center;
-    font-size: 45px;
+    font-size: 2,8em;
+    display: flex;
 }
 .parrafos{
-    font-size: 30px;
+    font-size: 1,8em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,19 +36,23 @@
 }
 .integrantes{
     text-align: center;
-    font-size: 100px;
+    font-size: 6,25em;
+    display: flex;
 }
 .nombres{
-    font-size: 20px;
+    font-size: 1,25em;
     display: flex; 
     justify-content: space-between;
         
 }
 .proyecto{
     text-align: center;
-    font-size:45px;   
+    font-size:2,8;  
+    display: flex; 
+    
 }
 .exp{
     text-align: center;
-    font-size:30px; 
+    font-size:1,8em; 
+    display: flex;
 }
