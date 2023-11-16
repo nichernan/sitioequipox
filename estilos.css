@@ -16,7 +16,13 @@ body{
 .diventeroinde{
     display: flex; 
     justify-content: space-between; 
+    flex-direction: row;
     margin: 0 10%;
+}
+@media (max-width: 600px) {
+  .diventeroinde{
+    flex-direction: column; /* Cambia a columna cuando el ancho de la pantalla sea 600px o menos */
+  }
 }
 .imgproductosinde{
     margin-right: 1em;
