@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>productos</title>
+    <link rel="stylesheet" href="estiloss.css">
+</head>
+    <body>
+    <header class="headertipo1">
+        <ul class="ultipo1">
+            <li class="litipo1"><a href="index.html">INICIO</a></li>
+            <li class="litipo1"><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="litipo1"><a href="productos.html">PRODUCTOS</a></li>
+            <li class="litipo1"><a href="contacto.html">CONTACTO</a></li>
+            <li class="litipo1"><a href="carrito.html" id="carritoLink">Carrito</a></li>
+        </ul>
+    </header>
+    
+        <div class="container">
+            <div class="products">
+                <!-- Aquí irán los productos -->
+            </div>
+        </div>
+    
+        <div class="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items">
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+            </ul>
+            <p>Total: <span id="total">0</span></p>
+        </div>
+    
+        <script>
+            const products = [
+                { id: 1, name: "Mueble para tv", price: 78000 },
+                { id: 2, name: "Mueble para tv", price: 90000 },
+                { id: 3, name: "Mueble para tv", price: 110000 },
+                { id: 4, name: "Armario", price: 83000 },
+                { id: 5, name: "Armario", price: 64000 },
+                { id: 6, name: "Armario", price: 70000 },
+                { id: 7, name: "Armario", price: 77000 },
+                { id: 8, name: "Mesa", price: 40000 },
+                { id: 9, name: "Mesa", price: 65000 },
+                { id: 10, name: "Mesa", price: 45000 }
+            ];
+    
+            const cart = [];
+            let total = 0;
+    
+            function displayProducts() {
+                const productsContainer = document.querySelector('.products');
+                productsContainer.innerHTML = '';
+    
+                for (let i = 0; i < products.length; i += 2) {
+                    const row = document.createElement('div');
+                    row.classList.add('row');
+    
+                    const product1 = products[i];
+                    const product2 = products[i + 1];
+    
+                    const productDiv1 = createProductDiv(product1);
+                    const productDiv2 = createProductDiv(product2);
+    
+                    row.appendChild(productDiv1);
+                    row.appendChild(productDiv2);
+    
+                    productsContainer.appendChild(row);
+                }
+            }
+    
+            function createProductDiv(product) {
+            const productDiv = document.createElement('div');
+            productDiv.classList.add('product');
+
+            const img = document.createElement('img');
+            if (product.id === 1) { // Verificar si es la Silla1 (id: 1)
+                img.src = "mesa2.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 2) { // Verificar si es la Silla1 (id: 1)
+                img.src = "mesa3.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 3) { // Verificar si es la Silla1 (id: 1)
+                img.src = "imgmuebleventa.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 4) { // Verificar si es la Silla1 (id: 1)
+                img.src = "imgmuebleventa2.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 5) { // Verificar si es la Silla1 (id: 1)
+                img.src = "armario1.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 6) { // Verificar si es la Silla1 (id: 1)
+                img.src = "armario3.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 7) { // Verificar si es la Silla1 (id: 1)
+                img.src = "armario4.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 8) { // Verificar si es la Silla1 (id: 1)
+                img.src = "imgmuebleventa3.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 9) { // Verificar si es la Silla1 (id: 1)
+                img.src = "mesacomer1.png"; // Ruta de la nueva imagen para Silla1
+            }
+            if (product.id === 10) { // Verificar si es la Silla1 (id: 1)
+                img.src = "mesacomer2.png"; // Ruta de la nueva imagen para Silla1
+            }
+           
+            productDiv.appendChild(img);
+
+            const descriptionDiv = document.createElement('div');
+            descriptionDiv.classList.add('description');
+            descriptionDiv.innerHTML = `
+                <p class="name">${product.name}</p>
+                <p class="price">$${product.price}</p>
+            `;
+            productDiv.appendChild(descriptionDiv);
+
+            const button = document.createElement('button');
+            button.innerText = "Agregar al carrito";
+            button.onclick = () => {
+                addToCart(product.id);
+                button.disabled = true; // Desactivar el botón después de agregarlo al carrito
+                button.innerText = "Agregado"; // Cambiar el texto del botón
+             };
+            productDiv.appendChild(button);
+
+            return productDiv;
+        }
+    
+            function addToCart(productId) {
+                const product = products.find(item => item.id === productId);
+                cart.push(product);
+                total += product.price;
+                displayCart();
+
+                // Guardar el carrito en el almacenamiento local
+             localStorage.setItem('carrito', JSON.stringify(cart));
+            }
+
+    
+            function displayCart() {
+                const cartContainer = document.getElementById('cart-items');
+                cartContainer.innerHTML = '';
+    
+                cart.forEach(item => {
+                    const li = document.createElement('li');
+                    li.innerText = `${item.name} - $${item.price}`;
+                    cartContainer.appendChild(li);
+                });
+    
+                const totalSpan = document.getElementById('total');
+                totalSpan.innerText = total;
+            
+            
+            // ... (tu código existente para mostrar los productos en el carrito)
+
+            // Actualizar el enlace del carrito con la cantidad de productos
+            const carritoLink = document.getElementById('carritoLink');
+            carritoLink.innerText = `Carrito (${cart.length})`;
+            carritoLink.href = "carrito.html"; // Enlazar al carrito.html
+            }
+
+    
+            displayProducts();
+        </script>
+    </body>
+<footer>
+    <p>Todos los derechos reservados</p>
+</footer>
+</html>
