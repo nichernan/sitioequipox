@@ -64,6 +64,11 @@ body{
     text-align: center; /* Centra el texto horizontalmente */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Agrega un borde negro al texto */
 }
+@media (max-width: 600px) {
+  .texto-sobre-imagen{
+    font-size: 20px;
+  }
+}
 .bodynosotros{
     background-color: #dcfb79; 
     color: black; 
