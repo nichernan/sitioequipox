@@ -1,0 +1,424 @@
+body{
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.bodyinde{
+    background-color: #dcfb79;
+}
+.bodyh1{
+    text-align: center; 
+    margin-bottom: 4em;
+    margin-left: 1em;
+}
+.diventeroinde{
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 10%;
+}
+.imgproductosinde{
+    margin-right: 1em;
+}
+.imgtamañoproduinde{
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+}
+.letracomprainde{
+    text-align: center; 
+    margin-top: 4em; 
+    margin-left: 1em;
+}
+.botoncomprainde{
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    display: inline-block; 
+    line-height: normal;
+}
+.NicolasHernandez {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+ }
+ .imagen-con-texto {
+    position: relative;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(253, 253, 253); /* texto a blanco */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Agrega un borde negro al texto */
+}
+.bodynosotros{
+    background-color: #dcfb79; 
+    color: black; 
+    font-family: Arial, sans-serif;
+}
+.diventeronos{
+    text-align: center; 
+    margin-top: 20px;
+}
+.letrah2nos{
+    font-size: 24px;
+}
+.parrafonos{
+    font-size: 18px; 
+    line-height: 1.5;
+}
+.divcentradonos{
+    text-align: center; 
+    margin-top: 40px;
+}
+.letraactvnos{
+    font-size: 24px;
+}
+.textoactvnos{
+    font-size: 18px; 
+    line-height: 1.5;
+}
+h2{
+    margin: 1em;
+    padding: 0px;
+    text-align: center;
+}
+header{ /*fondo de arriba de los botones(no el fondo de los botones,el de atras)*/
+    display: flex;
+    min-height: auto;
+    text-align: center;
+    background-color: #dcfb79;
+    font-size: 1.25em;
+    width: 100%;
+}
+.ultipo1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.litipo1{ /*botones*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 2.5em;
+    padding: 1.75vw;
+    margin: 0px;    
+    background-color: transparent; /* Cambia el color de fondo a transparente */
+    border: none; /* Elimina cualquier borde */
+    color: #000; /* Cambia el color del texto a negro, puedes ajustarlo a tus necesidades */
+}
+nav{
+    height: 3.5em;
+}
+footer{ /* rectangulo de abajo de todo*/
+    background-color: #dcfb79;
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+    padding: 1em;
+}
+.botontipo1{
+    font-size: 1em;
+    width: 100%;
+}
+.spantipo1{ /*esto es el cuadro del medio medio con la info*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25em;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    background-color: rgb(193, 213, 213);
+    padding: 1em;
+    border-radius: 1em;
+}
+.divtipo1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+}
+p{
+    margin: 0.2em;
+}
+.normal{
+    width: auto;
+    height: auto;
+}
+.noclass{
+    padding: 0%;
+    margin: 0.2em;
+}
+a{
+    font-size: 0.75em;
+    text-decoration: none;
+    padding: 2vw;
+}
+
+    .texto-sobre-imagen h1 {
+        font-size: 4em; /* Ajusta el tamaño del título */
+    }
+    
+    .texto-sobre-imagen p {
+        font-size: 1em; /* Ajusta el tamaño del párrafo */
+    }
+    h1{
+        background-color: transparent;/*parrafo arriba de imagen ....*/
+        margin: 0px;
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        text-align: center;
+        width: 100%;
+    }
+    .text-uppercase {
+        width: 100%; /* Asegura que el título ocupe todo el ancho de la pantalla */
+        text-align: center; /* Centra el texto */
+    }
+    .imagenosotros {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        height: 600px; /* Altura fija */
+        object-fit: cover; /* Mantiene la proporción de aspecto de la imagen */
+    }
+   
+    .imagenescontac {
+        width: 200px; /* Ancho de la imagen */
+        height: 200px; /* Altura de la imagen */
+        border-radius: 50%; /* Aplica un radio para convertir en círculo */
+        object-fit: cover; /* Ajusta la imagen al círculo sin deformar */
+        display: block; /* Para evitar que las imágenes se sobrepongan */
+        margin: 0 auto; /* Centra la imagen */
+      }
+
+  .diventerocontac {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+  }
+  
+
+  .circle {
+    flex: 1; /* Distribuye el espacio disponible en dos partes iguales */
+    margin: 0 10px; /* Agrega un margen horizontal entre las imágenes */
+    text-align: center; /* Alinea el texto al centro */
+  }
+.contactos{
+    text-align: center;
+}
+.contacoscontac{
+    color: rgb(3, 3, 3);
+}
+.parrafoscontac{
+    font-size: 16px;
+}
+/* Estilos para la página */
+.produbody {
+/* Configuración general del cuerpo del documento */
+    font-family: Arial, sans-serif; /* Fuente para todo el documento */
+    margin: 0; /* Elimina el margen alrededor del cuerpo del documento */
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px; /* Espaciado alrededor del contenedor */
+    justify-content: center; /* Esto centra los productos */
+}
+
+/* Filas de productos */
+.row {
+    display: flex; /* Utiliza flexbox para organizar los productos en filas */
+    justify-content: space-around; /* Espacio uniforme alrededor de los productos */
+    margin-bottom: 20px; /* Espaciado entre filas */
+    width: 185%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Estilos de cada producto */
+.product {
+    text-align: center; /* Centra el texto dentro de cada producto */
+    border: 1px solid #ccc; /* Borde alrededor de cada producto */
+    padding: 20px; /* Relleno alrededor del contenido del producto */
+    width: 45%; /* Ancho de cada producto para mostrar dos por fila */
+}
+
+/* Imágenes de los productos */
+.product img {
+    width: 200px; /* Ocupar todo el ancho disponible */
+    height: 150px; /* Mantener la proporción de la imagen */
+
+
+}
+
+/* Descripción de cada producto */
+.description {
+    margin-top: 10px; /* Espaciado superior de la descripción del producto */
+}
+
+/* Estilos de los párrafos de la descripción */
+.description p {
+    margin: 5px 0; /* Espaciado interno en los párrafos */
+}
+
+/* Estilos del nombre del producto en la descripción */
+.description .name {
+    font-weight: bold; /* Nombre del producto en negrita */
+    font-size: 16px; /* Tamaño de fuente del nombre */
+}
+
+/* Estilos del precio en la descripción */
+.description .price {
+    font-size: 14px; /* Tamaño de fuente del precio */
+}
+
+/* Estilos del botón 'Agregar al carrito' */
+button {
+    margin-top: 10px; /* Espaciado superior del botón */
+    padding: 5px 10px; /* Relleno del botón */
+    background-color: #333; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor sobre el botón */
+}
+.cart-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cart {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
+.carro {
+    width: 300px;
+    background: #dcfb79;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.titulo {
+    text-align: center;
+}
+
+.titulo hr, .productos hr {
+    width: 100%;
+    border: 0.5px solid #ccc;
+}
+
+.productos {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    max-height: 200px; /* Ajusta este valor según el tamaño deseado */
+    overflow: auto; /* Agregar barras de desplazamiento si se excede la altura */
+}
+
+.total {
+    text-align: center;
+}
+
+.total h3 {
+    margin: 5px 0;
+}
+/* Estilos para el contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto es para centrar verticalmente */
+    margin-top: 50px; /* Espacio entre el encabezado y el formulario */
+    padding: 20px; /* Espacio alrededor del formulario */
+}
+/* Estilos para las etiquetas */
+.form-label {
+    text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.form-input {
+    width: 200px; /* Ancho del campo de entrada */
+}
+/* Estilos para el botón de envío */
+.form-submit {
+    margin-top: 10px; /* Espacio superior entre los campos y el botón */
+}
+
+
+
+/* Estilos para los elementos del formulario */
+form {
+    width: 300px; /* Ancho del formulario */
+}
+
+/* Estilos para el pie de página */
+footer {
+    margin-top: 80px; /* Espacio entre el formulario y el pie de página */
+}
+.abonar{ 
+    font-weight: bold; /* Hace que los títulos estén en negrita */
+}
+.gracias{
+    text-align: center;
+    margin-top: auto; /* Empuja el h1 hacia el centro verticalmente */
+}
+
+.gracias {
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    font-size: 50px; 
+}
+
+.graciasfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #dcfb79;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+}
+.carritofooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #dcfb79;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;  
+}
