@@ -7,16 +7,16 @@
     <title>Carrito</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+<header class="headertipo1">
+    <ul class="ultipo1">
+        <li class="litipo1"><a href="index.html">INICIO</a></li>
+        <li class="litipo1"><a href="nosotros.html">NOSOTROS</a></li>
+        <li class="litipo1"><a href="productos.html">PRODUCTOS</a></li>
+        <li class="litipo1"><a href="contacto.html">CONTACTO</a></li>
+        <li class="litipo1"><a href="carrito.html" id="carritoLink">CARRITO</a></li>
+    </ul>
+</header>
 <body>
-    <header class="headertipo1">
-        <ul class="ultipo1">
-            <li class="litipo1"><a href="index.html">INICIO</a></li>
-            <li class="litipo1"><a href="nosotros.html">NOSOTROS</a></li>
-            <li class="litipo1"><a href="productos.html">PRODUCTOS</a></li>
-            <li class="litipo1"><a href="contacto.html">CONTACTO</a></li>
-            <li class="litipo1"><a href="carrito.html" id="carritoLink">Carrito</a></li>
-        </ul>
-    </header>
     <div class="carro">
         <div class="titulo">
         <h1>Productos en el carrito</h1>
@@ -66,10 +66,11 @@
             localStorage.setItem('carrito', JSON.stringify(updatedCart)); // Actualiza el carrito en el almacenamiento local
             location.reload(); // Recarga la página para reflejar los cambios
         }
-    </script>
+        </script>
     </div>    
 </body>
 <footer class="carritofooter">
+    <li class="litipo2"><a href="avances.html">AVANCES</a></li>
     <p>Todos los derechos reservados</p>
 </footer>
 </html>
