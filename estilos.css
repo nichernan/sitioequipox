@@ -16,13 +16,7 @@ body{
 .diventeroinde{
     display: flex; 
     justify-content: space-between; 
-    flex-direction: row;
     margin: 0 10%;
-}
-@media (max-width: 600px) {
-  .diventeroinde{
-    flex-direction: column; /* Cambia a columna cuando el ancho de la pantalla sea 600px o menos */
-  }
 }
 .imgproductosinde{
     margin-right: 1em;
@@ -51,9 +45,7 @@ body{
  }
  .imagen-con-texto {
     position: relative;
-
 }
-
 
 .texto-sobre-imagen {
     position: absolute;
@@ -63,11 +55,6 @@ body{
     color: rgb(253, 253, 253); /* texto a blanco */
     text-align: center; /* Centra el texto horizontalmente */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Agrega un borde negro al texto */
-}
-@media (max-width: 600px) {
-  .texto-sobre-imagen{
-    font-size: 20px;
-  }
 }
 .bodynosotros{
     background-color: #dcfb79; 
@@ -199,13 +186,13 @@ a{
     }
     .imagenosotros {
         width: 100%; /* Ocupa todo el ancho de la pantalla */
-        height: 600px; /* Altura fija */
+        height: 37,5em; /* Altura fija */
         object-fit: cover; /* Mantiene la proporción de aspecto de la imagen */
     }
    
     .imagenescontac {
-        width: 200px; /* Ancho de la imagen */
-        height: 200px; /* Altura de la imagen */
+        width: 9em; /* Ancho de la imagen */
+        height: 10em; /* Altura de la imagen */
         border-radius: 50%; /* Aplica un radio para convertir en círculo */
         object-fit: cover; /* Ajusta la imagen al círculo sin deformar */
         display: block; /* Para evitar que las imágenes se sobrepongan */
@@ -218,8 +205,8 @@ a{
   
 
   .circle {
-    flex: 1; /* Distribuye el espacio disponible en dos partes iguales */
-    margin: 0 10px; /* Agrega un margen horizontal entre las imágenes */
+    flex: 1em; /* Distribuye el espacio disponible en dos partes iguales */
+    margin: 1em; /* Agrega un margen horizontal entre las imágenes */
     text-align: center; /* Alinea el texto al centro */
   }
 .contactos{
@@ -229,7 +216,7 @@ a{
     color: rgb(3, 3, 3);
 }
 .parrafoscontac{
-    font-size: 16px;
+    font-size: 1.3em;
 }
 /* Estilos para la página */
 .produbody {
@@ -243,8 +230,8 @@ a{
 
 /* Contenedor principal */
 .container {
-    max-width: 800px; /* Ancho máximo del contenedor */
-    margin: 20px; /* Espaciado alrededor del contenedor */
+    max-width: 51em; /* Ancho máximo del contenedor */
+    margin: 1,25em; /* Espaciado alrededor del contenedor */
     justify-content: center; /* Esto centra los productos */
 }
 
@@ -259,44 +246,44 @@ a{
 /* Estilos de cada producto */
 .product {
     text-align: center; /* Centra el texto dentro de cada producto */
-    border: 1px solid #ccc; /* Borde alrededor de cada producto */
-    padding: 20px; /* Relleno alrededor del contenido del producto */
+    border: 0.05em solid #ccc; /* Borde alrededor de cada producto */
+    padding: 2em; /* Relleno alrededor del contenido del producto */
     width: 45%; /* Ancho de cada producto para mostrar dos por fila */
 }
 
 /* Imágenes de los productos */
 .product img {
-    width: 200px; /* Ocupar todo el ancho disponible */
-    height: 150px; /* Mantener la proporción de la imagen */
+    width: 15em; /* Ocupar todo el ancho disponible */
+    height: 11em; /* Mantener la proporción de la imagen */
 
 
 }
 
 /* Descripción de cada producto */
 .description {
-    margin-top: 10px; /* Espaciado superior de la descripción del producto */
+    margin-top: 0,6em; /* Espaciado superior de la descripción del producto */
 }
 
 /* Estilos de los párrafos de la descripción */
 .description p {
-    margin: 5px 0; /* Espaciado interno en los párrafos */
+    margin: 0.3em; /* Espaciado interno en los párrafos */
 }
 
 /* Estilos del nombre del producto en la descripción */
 .description .name {
     font-weight: bold; /* Nombre del producto en negrita */
-    font-size: 16px; /* Tamaño de fuente del nombre */
+    font-size: 1em; /* Tamaño de fuente del nombre */
 }
 
 /* Estilos del precio en la descripción */
 .description .price {
-    font-size: 14px; /* Tamaño de fuente del precio */
+    font-size: 1em; /* Tamaño de fuente del precio */
 }
 
 /* Estilos del botón 'Agregar al carrito' */
 button {
-    margin-top: 10px; /* Espaciado superior del botón */
-    padding: 5px 10px; /* Relleno del botón */
+    margin-top: 1em; /* Espaciado superior del botón */
+    padding: 1em; /* Relleno del botón */
     background-color: #333; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     border: none; /* Sin borde */
@@ -308,25 +295,25 @@ button:hover {
 }
 .cart-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0,62em;
+    right: 0,62em;
 }
 
 .cart {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 3,1em;
     right: 0;
-    width: 200px;
+    width: 12,5em;
     background: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    z-index: 1;
+    border: 0,06em solid #ccc;
+    padding: 0,6em;
+    z-index: 1em;
 }
 .carro {
-    width: 300px;
+    width: 19em;
     background: #dcfb79;
-    padding: 20px;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -351,8 +338,8 @@ button:hover {
     text-align: left;
     width: 100%;
     padding: 0;
-    margin: 10px 0;
-    max-height: 200px; /* Ajusta este valor según el tamaño deseado */
+    margin: 0,62em;
+    max-height: 12em; /* Ajusta este valor según el tamaño deseado */
     overflow: auto; /* Agregar barras de desplazamiento si se excede la altura */
 }
 
@@ -361,7 +348,7 @@ button:hover {
 }
 
 .total h3 {
-    margin: 5px 0;
+    margin: 0,3em;
 }
 /* Estilos para el contenedor del formulario */
 .form-container {
@@ -370,8 +357,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Esto es para centrar verticalmente */
-    margin-top: 50px; /* Espacio entre el encabezado y el formulario */
-    padding: 20px; /* Espacio alrededor del formulario */
+    margin-top: 3,125em; /* Espacio entre el encabezado y el formulario */
+    padding: 1em; /* Espacio alrededor del formulario */
 }
 /* Estilos para las etiquetas */
 .form-label {
@@ -380,23 +367,23 @@ button:hover {
 
 /* Estilos para los campos de entrada */
 .form-input {
-    width: 200px; /* Ancho del campo de entrada */
+    width: 13em; /* Ancho del campo de entrada */
 }
 /* Estilos para el botón de envío */
 .form-submit {
-    margin-top: 10px; /* Espacio superior entre los campos y el botón */
+    margin-top: 1em; /* Espacio superior entre los campos y el botón */
 }
 
 
 
 /* Estilos para los elementos del formulario */
 form {
-    width: 300px; /* Ancho del formulario */
+    width: 19em; /* Ancho del formulario */
 }
 
 /* Estilos para el pie de página */
 footer {
-    margin-top: 80px; /* Espacio entre el formulario y el pie de página */
+    margin-top:5em; /* Espacio entre el formulario y el pie de página */
 }
 .abonar{ 
     font-weight: bold; /* Hace que los títulos estén en negrita */
@@ -414,7 +401,7 @@ footer {
     align-items: center;
     height: 70vh;
     margin: 0;
-    font-size: 50px; 
+    font-size: 5em; 
 }
 
 .graciasfooter {
@@ -434,4 +421,30 @@ footer {
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;  
+}
+.litipo2 {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+}
+.ultipo2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avance1 {
+    position: relative;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.figma-link {
+    margin-top: 20px; /* Ajusta el espacio entre el h1 y el enlace */
 }
