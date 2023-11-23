@@ -44,7 +44,10 @@ body{
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
  }
  .imagen-con-texto {
-    position: relative;
+    background-image: url('imgmueble.png');
+    background-size: 100% auto; /* Ancho al 100% y alto automático */
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .texto-sobre-imagen {
