@@ -44,8 +44,6 @@ body{
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
  }
  .imagen-con-texto {
-    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
     position: relative;
 }
 
@@ -57,7 +55,6 @@ body{
     color: rgb(253, 253, 253); /* texto a blanco */
     text-align: center; /* Centra el texto horizontalmente */
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Agrega un borde negro al texto */
-    max-width: 80%;
 }
 .bodynosotros{
     background-color: #dcfb79; 
@@ -451,11 +448,4 @@ footer {
 .figma-link {
     margin-top: 20px; /* Ajusta el espacio entre el h1 y el enlace */
 }
-@media only screen and (max-width: 768px) {
-    .texto-sobre-imagen h1 {
-        font-size: 24px; /* Ajusta el tamaño del título */
-    }
-    .texto-sobre-imagen p {
-        font-size: 14px; /* Ajusta el tamaño del párrafo */
-    }
-}
+
