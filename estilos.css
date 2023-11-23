@@ -45,8 +45,6 @@ body{
  }
  .imagen-con-texto {
     position: relative;
-    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 
 .texto-sobre-imagen {
