@@ -451,3 +451,11 @@ footer {
 .figma-link {
     margin-top: 20px; /* Ajusta el espacio entre el h1 y el enlace */
 }
+@media only screen and (max-width: 768px) {
+    .texto-sobre-imagen h1 {
+        font-size: 24px; /* Ajusta el tamaño del título */
+    }
+    .texto-sobre-imagen p {
+        font-size: 14px; /* Ajusta el tamaño del párrafo */
+    }
+}
