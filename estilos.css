@@ -463,13 +463,13 @@ footer {
     .texto-sobre-imagen p {
         font-size: 0.8em; /* Reducir el tamaño del párrafo para dispositivos móviles */
     }
-        .diventeroinde {
+    .diventeroinde {
         flex-direction: column; /* Cambiar la dirección a columna */
         align-items: center; /* Centrar los elementos horizontalmente */
         display: flex;
     }
     .imgproductosinde {
         width: 100%;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
 }
