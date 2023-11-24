@@ -47,15 +47,14 @@
     
             const cart = [];
             let total = 0;
-    
             function displayProducts() {
-                const productsContainer = document.querySelector('.products');
-                productsContainer.innerHTML = '';
-    
-                for (let i = 0; i < products.length; i += 2) {
-                    const row = document.createElement('div');
-                    row.classList.add('row');
-    
+            const productsContainer = document.querySelector('.products');
+            productsContainer.innerHTML = '';
+
+            for (let i = 0; i < products.length; i++) {
+            const productDiv = createProductDiv(products[i]);
+            productsContainer.appendChild(productDiv);
+            }
                     const product1 = products[i];
                     const product2 = products[i + 1];
     
