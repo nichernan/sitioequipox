@@ -448,4 +448,19 @@ footer {
 .figma-link {
     margin-top: 20px; /* Ajusta el espacio entre el h1 y el enlace */
 }
-
+@media only screen and (max-width: 48em) {
+    .imgfondoindex {
+        height: auto; /* Hacer que la altura sea automática */
+        max-width: 100%; /* Asegurar que la imagen no se salga del ancho de la pantalla */
+        object-fit: cover; /* Mantener la proporción de aspecto y cubrir el contenedor */
+    }
+    .texto-sobre-imagen {
+        width: 90%; /* Ajustar el texto al ancho del dispositivo */
+    }
+    .texto-sobre-imagen h1 {
+        font-size: 2.5em; /* Reducir el tamaño del título para dispositivos móviles */
+    }
+    .texto-sobre-imagen p {
+        font-size: 0.8em; /* Reducir el tamaño del párrafo para dispositivos móviles */
+    }
+}
