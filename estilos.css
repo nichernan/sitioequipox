@@ -472,4 +472,10 @@ footer {
         width: 100%;
         margin-bottom: 2em;
     }
+    .imagenosotros{
+        height: auto; /* Hacer que la altura sea automática */
+        max-width: 100%; /* Asegurar que la imagen no se salga del ancho de la pantalla */
+        object-fit: cover; /* Mantener la proporción de aspecto y cubrir el contenedor */
+    }
+}
 }
