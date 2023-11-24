@@ -474,3 +474,16 @@ footer {
         margin-bottom: 2em;
     }
 }
+@media only screen and (max-width: 48em) {
+    /* Modifica el diseño de las filas */
+    .row {
+        flex-direction: column; /* Cambia la dirección de los elementos a columnas */
+        align-items: center; /* Centra los productos horizontalmente */
+    }
+
+    /* Modifica el ancho de cada producto para ocupar toda la fila */
+    .product {
+        width: 90%; /* Ocupa el 90% del ancho disponible */
+        margin-bottom: 20px; /* Agrega espacio entre los productos */
+    }
+}
