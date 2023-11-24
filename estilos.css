@@ -466,10 +466,10 @@ footer {
         .diventeroinde {
         flex-direction: column; /* Cambiar la dirección a columna */
         align-items: center; /* Centrar los elementos horizontalmente */
+        display: flex;
     }
     .imgproductosinde {
-        margin-right: 0; /* Eliminar el margen entre las imágenes */
-        margin-bottom: 1em; /* Agregar espacio entre las imágenes */
-        text-align: center; /* Centrar las imágenes */
+        width: 100%;
+        margin-bottom: 1em;
     }
 }
