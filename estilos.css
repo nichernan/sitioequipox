@@ -486,7 +486,7 @@ footer {
         width: 90%; /* Ocupa el 90% del ancho disponible */
         margin-bottom: 20px; /* Agrega espacio entre los productos */
     }  
-        header {
+    header {
         height: 10vh; /* Ajusta la altura del encabezado al 10% de la altura de la pantalla */
         font-size: 1.5em; /* Tamaño de fuente del encabezado */
     }
@@ -494,6 +494,15 @@ footer {
     footer {
         height: 10vh; /* Ajusta la altura del pie de página al 10% de la altura de la pantalla */
         font-size: 1.2em; /* Tamaño de fuente del pie de página */
+    }
+    .ultipo1,
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0;
+        margin: 0;
     }
 }
 
