@@ -485,6 +485,9 @@ footer {
     .product {
         width: 90%; /* Ocupa el 90% del ancho disponible */
         margin-bottom: 20px; /* Agrega espacio entre los productos */
-    }  
+        padding: 1em; /* Modifica el relleno alrededor de cada producto */
+        margin-bottom: 1em; /* Agrega espacio entre los productos */
+    }
+    
 }
 
