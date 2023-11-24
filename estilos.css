@@ -186,8 +186,9 @@ a{
     }
     .imagenosotros {
         width: 100%; /* Ocupa todo el ancho de la pantalla */
-        height: 37,5em; /* Altura fija */
+        height: auto; /* Altura fija */
         object-fit: cover; /* Mantiene la proporción de aspecto de la imagen */
+        
     }
    
     .imagenescontac {
